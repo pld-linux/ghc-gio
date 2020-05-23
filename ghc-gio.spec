@@ -13,7 +13,7 @@ BuildRequires:	ghc-glib
 BuildRequires:	ghc-prof
 BuildRequires:	gtk2hs
 BuildRequires:	rpmbuild(macros) >= 1.608
-%requires_releq	ghc
+%requires_eq	ghc
 Requires(post,postun):	/usr/bin/ghc-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
